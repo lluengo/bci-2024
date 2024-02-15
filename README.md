@@ -18,6 +18,7 @@ https://drive.google.com/drive/folders/1NGM-rZxr2bu3_VxtXAzSbpc4t6n9LJqs?usp=sha
 
 Herramientas
 * [Spring boot](https://spring.io/projects/spring-boot) - Framework de java
+* [Spring security](https://hibernate.org/](https://spring.io/projects/spring-security) - Framework para el manejo de seguridad.
 * [Hibernate](https://hibernate.org/) - ORM. Mapear tablas a clases de Java
 * [Junit5 y Mockito]() - Tests y Test de integración.
 
@@ -31,13 +32,13 @@ Metodología
 * ** Linux ubuntu 22.04
 * ** Intellij Idea.
 * ** Git
-* ** Gradle 8.0
-* ** Java 1.8
+* ** Maven 4.0.0
+* ** Java 17
 
 ### Instalación 🔧
 
 Descargar el proyecto.
-Tener instalado gradle y java 1.8
+Tener instalado gradle y java 17
 
 ##### Instalar Lombok en el IDE
 
