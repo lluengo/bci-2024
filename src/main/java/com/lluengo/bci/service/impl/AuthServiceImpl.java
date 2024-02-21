@@ -65,6 +65,7 @@ public class AuthServiceImpl implements AuthService {
             .created(user.getCreated())
             .id(user.getId())
             .lastLogin(user.getLastLogin())
+            .modified(new Date())
             .token(jwtService.getToken(user))
             .isActive(Boolean.TRUE)
             .build();
