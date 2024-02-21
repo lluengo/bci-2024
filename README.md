@@ -11,7 +11,14 @@ Alta de usuario con generacion de token.
 
 ## Documentación ⚙️
 
-https://drive.google.com/drive/folders/1NGM-rZxr2bu3_VxtXAzSbpc4t6n9LJqs?usp=sharing
+Usecase:
+![alt text](documentation/usecase.png)
+
+Sd Login:
+![alt text](documentation/loginsd.png)
+
+Sd Register:
+![alt text](documentation/registersd.png)
 
 
 ## Stack Tecnológico 🛠️
@@ -24,20 +31,24 @@ Herramientas
 Metodología
 * [Git Flow](https://www.atlassian.com/git/tutorials/comparing-workflows/gitflow-workflow) - Colaboración y versionado
 
-&nbsp;
-
 ## Entorno de Desarrollo 🚀
 
 * ** Linux ubuntu 22.04
 * ** Intellij Idea.
 * ** Git
-* ** Gradle 8.0
-* ** Java 1.8
+* ** Maven
+* ** Java 17
 
 ### Instalación 🔧
 
 Descargar el proyecto.
-Tener instalado gradle y java 1.8
+Tener instalado maven y java 17
+
+La aplicación correrá por defecto en localhost:8081
+
+Para realizar pruebas podrá utilizar postman (json debajo) o swagger.
+
+[localhost](http://localhost:8081/swagger-ui.html)
 
 ##### Instalar Lombok en el IDE
 
@@ -45,19 +56,19 @@ _Esto depende del IDE(1) que utilices, seguir indicaciones de la web de [Project
 
 ##### Iniciar aplicación
 
-    gradlew bootRun
-
+    mvn spring-boot:run
 
 ## Ejecutando las Pruebas ⚙️
      
 ### Ejecutar tests para ver que esté todo en orden
 
-    gradlew verify
-    
+    mvn verify
 
-&nbsp;
+### Postman
+    
+* [import json](documentation/bci-postman.json)
 
 ## Autores ✒️
 
-* **Leonel Luengo** - ** - [lluengo](https://gitlab.gscorp.ad/{UsuarioAD})
+* **Leonel Luengo** - ** - [lluengo](https://github.com/lluengo/bci-2024)
 &nbsp;

@@ -8,6 +8,7 @@ import com.lluengo.bci.exception.EmailValidationException;
 import com.lluengo.bci.exception.PasswordException;
 import com.lluengo.bci.jwt.JwtService;
 import com.lluengo.bci.repository.UserRepository;
+import com.lluengo.bci.service.impl.AuthServiceImpl;
 import com.lluengo.bci.utils.RegExValidator;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -15,12 +16,10 @@ import org.mockito.InjectMocks;
 import org.mockito.Mock;
 import org.mockito.Mockito;
 import org.mockito.junit.MockitoJUnitRunner;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
 import org.springframework.security.core.Authentication;
-import org.springframework.security.core.AuthenticationException;
 
 import java.util.Date;
 import java.util.Optional;
@@ -41,7 +40,7 @@ public class AuthServiceTest {
     private AuthenticationManager authenticationManager;
 
     @InjectMocks
-    private AuthService authService;
+    private AuthServiceImpl authService;
     @Mock
     private RegExValidator regExValidator;
 

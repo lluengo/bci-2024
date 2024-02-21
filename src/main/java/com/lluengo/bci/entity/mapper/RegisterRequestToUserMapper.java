@@ -5,7 +5,6 @@ import com.lluengo.bci.entity.Role;
 import com.lluengo.bci.entity.User;
 import com.lluengo.bci.entity.dto.auth.RegisterRequestDto;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.context.annotation.Bean;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
 

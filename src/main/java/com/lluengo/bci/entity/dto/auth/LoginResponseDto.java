@@ -12,11 +12,6 @@ import java.util.UUID;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-public class AuthResponseDto {
-    UUID id;
-    Date created;
-    Date modified;
-    Date lastLogin;
+public class LoginResponseDto {
     String token;
-    Boolean isActive;
 }

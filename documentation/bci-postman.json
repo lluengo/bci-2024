@@ -1,0 +1,41 @@
+{
+	"info": {
+		"_postman_id": "53fc6036-be2c-45d7-bade-4b8df7ba90dc",
+		"name": "BCI ex 2024",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "9883927"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "register",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "prueba_token",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsbHVlbmdvQGdtYWlsLmNvbSIsImlhdCI6MTcwNzkyODExOCwiZXhwIjoxNzA3OTI5NTU4fQ.i_cmfbq9t77E6gHDfkS_1ngUy6-0P5CFMRmw7QZEOyA"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"url": "http://localhost:8081/api/v1/demo"
+			},
+			"response": []
+		}
+	]
+}
