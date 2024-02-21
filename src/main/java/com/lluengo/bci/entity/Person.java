@@ -1,12 +1,13 @@
 package com.lluengo.bci.entity;
 
 import jakarta.persistence.*;
-import lombok.Data;
-
+import lombok.Getter;
+import lombok.Setter;
 import java.util.UUID;
 
 @MappedSuperclass
-@Data
+@Getter
+@Setter
 public class Person {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)

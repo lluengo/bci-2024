@@ -3,7 +3,6 @@ package com.lluengo.bci.entity;
 import java.util.Collection;
 import java.util.Date;
 import java.util.List;
-
 import jakarta.persistence.*;
 import lombok.*;
 import org.springframework.security.core.GrantedAuthority;

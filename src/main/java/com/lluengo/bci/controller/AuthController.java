@@ -1,7 +1,8 @@
 package com.lluengo.bci.controller;
 
 import com.lluengo.bci.entity.dto.auth.AuthResponseDto;
-import com.lluengo.bci.service.impl.AuthServiceImpl;
+import com.lluengo.bci.entity.dto.auth.LoginResponseDto;
+import com.lluengo.bci.service.AuthService;
 import com.lluengo.bci.entity.dto.auth.LoginRequestDto;
 import com.lluengo.bci.entity.dto.auth.RegisterRequestDto;
 import org.springframework.http.HttpStatus;
@@ -18,10 +19,10 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class AuthController {
     
-    private final AuthServiceImpl authService;
+    private final AuthService authService;
     
     @PostMapping(value = "login")
-    public ResponseEntity<AuthResponseDto> login(@RequestBody LoginRequestDto request)
+    public ResponseEntity<LoginResponseDto> login(@RequestBody LoginRequestDto request)
     {
         return ResponseEntity.ok(authService.login(request));
     }
