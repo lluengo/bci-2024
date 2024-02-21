@@ -20,6 +20,9 @@ Sd Login:
 Sd Register:
 ![alt text](documentation/registersd.png)
 
+ER:
+![alt text](documentation/er.png)
+
 
 ## Stack Tecnológico 🛠️
 
