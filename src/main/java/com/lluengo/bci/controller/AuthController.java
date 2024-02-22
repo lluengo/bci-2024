@@ -5,6 +5,7 @@ import com.lluengo.bci.entity.dto.auth.LoginResponseDto;
 import com.lluengo.bci.service.AuthService;
 import com.lluengo.bci.entity.dto.auth.LoginRequestDto;
 import com.lluengo.bci.entity.dto.auth.RegisterRequestDto;
+import jakarta.validation.Valid;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -28,7 +29,7 @@ public class AuthController {
     }
 
     @PostMapping(value = "register")
-    public ResponseEntity<AuthResponseDto> register(@RequestBody RegisterRequestDto request)
+    public ResponseEntity<AuthResponseDto> register(@Valid @RequestBody RegisterRequestDto request)
     {
         return new ResponseEntity<AuthResponseDto>(authService.register(request), HttpStatus.CREATED);
     }

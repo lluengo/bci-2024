@@ -9,16 +9,36 @@
 		{
 			"name": "login",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"username\":\"usuarios@example.com\",\n    \"password\":\"Password12\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/auth/login"
 			},
 			"response": []
 		},
 		{
 			"name": "register",
 			"request": {
-				"method": "GET",
-				"header": []
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"email\": \"usuario@example.com\",\n  \"password\": \"Password12\",\n  \"name\": \"Roberto Gimenes\",\n  \"country\": \"Argentina\",\n  \"phones\": [\n    {\n      \"number\": 123456789,\n      \"cityCode\": 123,\n      \"countryCode\": \"CC\"\n    },\n    {\n      \"number\": 987654321,\n      \"cityCode\": 456,\n      \"countryCode\": \"CC\"\n    }\n  ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "http://localhost:8081/auth/register"
 			},
 			"response": []
 		},
@@ -28,7 +48,7 @@
 				"auth": {
 					"type": "bearer",
 					"bearer": {
-						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJsbHVlbmdvQGdtYWlsLmNvbSIsImlhdCI6MTcwNzkyODExOCwiZXhwIjoxNzA3OTI5NTU4fQ.i_cmfbq9t77E6gHDfkS_1ngUy6-0P5CFMRmw7QZEOyA"
+						"token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1c3Vhcmlvc0BleGFtcGxlLmNvbSIsImlhdCI6MTcwODU0NjYzNywiZXhwIjoxNzA4NTQ4MDc3fQ.q1WF0nkFo52y0HpchhVip_9gImIjRTiQZjMt83sb4cY"
 					}
 				},
 				"method": "POST",

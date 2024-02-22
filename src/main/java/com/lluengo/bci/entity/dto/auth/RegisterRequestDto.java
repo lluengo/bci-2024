@@ -1,5 +1,6 @@
 package com.lluengo.bci.entity.dto.auth;
-
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -12,7 +13,9 @@ import java.util.List;
 @NoArgsConstructor
 @AllArgsConstructor
 public class RegisterRequestDto {
+    @NotBlank
     String email;
+    @NotBlank
     String password;
     String name;
     String country;

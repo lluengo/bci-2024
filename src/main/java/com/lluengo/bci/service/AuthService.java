@@ -6,6 +6,6 @@ import com.lluengo.bci.entity.dto.auth.LoginResponseDto;
 import com.lluengo.bci.entity.dto.auth.RegisterRequestDto;
 
 public interface AuthService {
-    public LoginResponseDto login(LoginRequestDto request);
-    public AuthResponseDto register(RegisterRequestDto request);
+    LoginResponseDto login(LoginRequestDto request);
+    AuthResponseDto register(RegisterRequestDto request);
     }
